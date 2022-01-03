@@ -12,8 +12,7 @@ syntax match LIdentifier "\v[a-z][a-zA-Z0-9]*"
 syntax match LType 		 "\v[A-Z][a-zA-Z0-9]*"
 syntax match LNum 		 "\v[0-9]+"
 syntax match LNum 		 "\v[0-9]+\.[0-9]+"
-syntax match LFunc       "\v\w@<!(\u|_+[A-Z0-9])[A-Z0-9_]*\w@!"
-syntax match LFuncCall   "\(\('\)\@<!(\)\@<=\<.\{-1,}\>?\{0,1}"
+" syntax match LFuncCall   "\(\('\)\@<!(\)\@<=\<.\{-1,}\>?\{0,1}"
 
 syntax match LKeyword    "Alisson"
 syntax match LKeyword    "Alisson?"
@@ -21,7 +20,7 @@ syntax match LKeyword    "AlissonSay"
  
 highlight      LComment     ctermfg=DarkGrey guifg=DarkGrey
 highlight      LCommentTodo ctermfg=Black ctermbg=Yellow guifg=Black guibg=Yellow
-highlight      LFunc        ctermfg=Red 
+" highlight      LFuncCall    ctermfg=Red 
 highlight link LKeyword     Keyword
 highlight link LNum 	    Number
 highlight link LIdentifier  Identifier
