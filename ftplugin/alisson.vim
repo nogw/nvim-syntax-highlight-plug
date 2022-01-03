@@ -1,3 +1,3 @@
 setlocal commentstring={.\ %s
 set      smarttab
-setl 	 shiftwidth=2
+setl     shiftwidth=2
